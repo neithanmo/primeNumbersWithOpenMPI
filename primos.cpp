@@ -100,7 +100,14 @@ int main(int argc, char *argv[]){
            printf("\n ===========================================================================> \n");
        }
            break;
-        default:
+        default:{
+                printf("\n ===========================================================================> \n");
+                printf("\n EL PROCESO %u ENCONTRO %u NUMEROS PRIMOS Y SON LOS SIGUIENTES \n", my_id, (int)array1->size());
+                for(int i = 0; i<array1->size();i++){
+                        std::cout<<" "<< array1->at(i);
+                        }
+                printf("\n ===========================================================================> \n");
+            }
             break;
         }
 
